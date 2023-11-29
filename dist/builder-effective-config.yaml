@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+extraMetadata:
+  main: build/electron.js
+appId: webi.app.com
+extraResources:
+  - filter:
+      - ./public/**
+win:
+  icon: ./public/electron.jpg
+extends: react-cra
+electronVersion: 27.1.2
